@@ -74,3 +74,10 @@
   border-radius: 2px;
   height: 200%;
 }
+
+.botonera .links .Active {
+  background: #fff;
+  border-radius: 2px;
+  height: 200%;
+  color: #5C73F2;
+}
