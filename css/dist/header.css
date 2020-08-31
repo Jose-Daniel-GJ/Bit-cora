@@ -44,6 +44,7 @@
   display: grid;
   gap: 20px;
   margin-right: 50%;
+  margin-left: 5%;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "Inicio clase1 clase2 clase3 clase4 clase5";
@@ -64,9 +65,13 @@
   width: 70%;
   text-align: center;
   align-self: center;
+  transition: 0.2s;
+  width: 100%;
 }
 .botonera .links a:hover {
   background: #fff;
   color: #5C73F2;
   border-radius: 2px;
+  height: 100%;
+  height: 200%;
 }
