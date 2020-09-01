@@ -12,10 +12,12 @@ body {
 .header_box {
   height: 70vh;
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "imagen titulo";
   align-items: center;
   justify-content: center;
-  box-shadow: 7000px 0 0 #071faa6e inset;
   background-image: url(../../img/graduados-min.jpg);
   background-size: cover;
   background-position: center bottom;
@@ -26,15 +28,38 @@ body {
     width: 100%;
   }
 }
+.header_box .imagen {
+  height: 100%;
+  width: 100%;
+  grid-area: imagen;
+  background: #1042ad69;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_box .imagen img {
+  width: 50%;
+  box-shadow: 0px 0px 0px 10px #230A59;
+  clip-path: circle(20% at 50% 50%);
+}
 .header_box .header_box__titles {
   align-items: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
+  position: relative;
+  grid-area: titulo;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  box-shadow: 7000px 0 0 #1042ad69 inset;
 }
 .header_box .header_box__titles h1 {
-  height: 100%;
+  padding: 5px;
+  border: solid 5px #fff;
   color: #fff;
+  font-weight: 1000;
   display: flex;
+  z-index: 10;
   text-align: center;
 }
 
@@ -109,23 +134,42 @@ body {
   transition: 0.2s;
   width: 100%;
 }
-.botonera .links a:hover {
-  background: #fff;
-  color: #5C73F2;
-  border-radius: 2px;
-  height: 200%;
+@media (max-width: 510px) {
+  .botonera .links a {
+    box-shadow: #5C73F2 0px 1px 0px;
+  }
+}
+@media (max-width: 510px) {
+  .botonera .links a:hover {
+    background: #fff;
+    color: #5C73F2;
+    border-radius: 2px;
+    height: 100%;
+  }
+}
+@media (min-width: 511px) {
+  .botonera .links a:hover {
+    background: #fff;
+    color: #5C73F2;
+    border-radius: 2px;
+    height: 200%;
+  }
 }
 
-section {
-  margin-top: 100px;
+@media (min-width: 511px) {
+  .botonera .links .Active {
+    background: #fff;
+    border-radius: 2px;
+    height: 200%;
+    padding-top: 5px;
+    color: #5C73F2;
+    transition: 0.2s;
+    box-shadow: 0px 6px 0px #230A59 inset;
+  }
 }
-
-.botonera .links .Active {
-  background: #fff;
-  border-radius: 2px;
-  height: 200%;
-  padding-top: 5px;
-  color: #5C73F2;
-  transition: 0.2s;
-  box-shadow: 0px 6px 0px #230A59 inset;
+@media (max-width: 510px) {
+  .botonera .links .Active {
+    background: #fff;
+    color: #5C73F2;
+  }
 }

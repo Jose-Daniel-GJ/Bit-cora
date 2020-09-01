@@ -12,14 +12,19 @@ footer h1 {
   margin-bottom: 0;
   padding-top: 1%;
 }
-footer p {
-  padding-bottom: 1%;
+footer .fecha {
+  margin-top: 0;
   text-align: center;
+  font-size: 12px;
 }
-footer p a {
+footer .correo {
+  text-align: center;
+  margin-bottom: 0;
+}
+footer .correo a {
   text-decoration: none;
   color: #fff;
 }
-footer p a:hover {
+footer .correo a:hover {
   color: #00ccff;
 }

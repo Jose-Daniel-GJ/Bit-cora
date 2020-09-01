@@ -1,0 +1,27 @@
+.grid_inicio{
+    margin: 2% 3%;
+    position: relative;
+    background: rgba(128, 128, 128, 0.37);
+    // Grids
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas: "section section aside"
+                         "widget widget widget";
+    & section{
+        grid-area: section;
+        padding: 10px 15px;
+        text-align: justify;
+        border: gray 1px solid;
+    }
+    & aside{
+        border: gray 1px solid;
+        grid-area: aside;
+    }
+    & .widgets{
+        border: gray 1px solid;
+        grid-area: widget;
+    }
+}
