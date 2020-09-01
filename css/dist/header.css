@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+  min-width: 100%;
+}
+
 .header_box {
   height: 70vh;
   width: 100%;
@@ -11,10 +16,15 @@
   align-items: center;
   justify-content: center;
   box-shadow: 7000px 0 0 #071faa6e inset;
-  background-image: url(../../img/graduados.jpg);
+  background-image: url(../../img/graduados-min.jpg);
   background-size: cover;
   background-position: center bottom;
   background-attachment: fixed;
+}
+@media all and (max-width: 364px) {
+  .header_box {
+    width: 100%;
+  }
 }
 .header_box .header_box__titles {
   align-items: center;
@@ -37,7 +47,14 @@
 }
 @media (max-width: 1145px) {
   .botonera {
-    height: 70px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 510px) {
+  .botonera {
+    height: max-content;
+    overflow: hidden;
+    padding-top: 15px;
   }
 }
 .botonera .links {
@@ -47,10 +64,34 @@
   margin-left: 5%;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "Inicio clase1 clase2 clase3 clase4 clase5";
+  grid-template-areas: "Inicio clase1 clase2 clase3 clase4";
   align-content: center;
   justify-content: center;
   color: #fff;
+}
+@media (max-width: 960px) {
+  .botonera .links {
+    margin-right: 35%;
+  }
+}
+@media (max-width: 960px) {
+  .botonera .links {
+    margin-right: 5%;
+  }
+}
+@media (max-width: 510px) {
+  .botonera .links {
+    grid-template-areas: "Inicio" "clase1" "clase2" "clase3" "clase4";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr;
+    padding-top: 5px;
+    padding-bottom: 25px;
+  }
+  .botonera .links a :hover :hover {
+    background: #fff;
+    color: #0029FA;
+    border-radius: 2px;
+  }
 }
 .botonera .links a {
   display: flexbox;
@@ -75,9 +116,16 @@
   height: 200%;
 }
 
+section {
+  margin-top: 100px;
+}
+
 .botonera .links .Active {
   background: #fff;
   border-radius: 2px;
   height: 200%;
+  padding-top: 5px;
   color: #5C73F2;
+  transition: 0.2s;
+  box-shadow: 0px 6px 0px #230A59 inset;
 }

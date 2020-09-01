@@ -1,0 +1,29 @@
+footer{
+    background: #230A59;
+    color: #fff;
+    width: 100%;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 1;
+
+    & h1{
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 0;
+        padding-top: 1%
+        
+    }
+    & p{
+        padding-bottom: 1%;
+        text-align: center;
+
+        & a{
+            text-decoration: none;
+            color: #fff;
+            &:hover{
+                color: rgb(0, 204, 255);
+            }
+        }
+    }
+    
+}
