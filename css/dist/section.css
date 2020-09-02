@@ -6,7 +6,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 20px;
-  grid-template-areas: "section section aside" "widget widget widget";
+  grid-template-areas: "section section aside" "widgets widgets widgets";
 }
 .grid_inicio section {
   grid-area: section;
@@ -20,5 +20,5 @@
 }
 .grid_inicio .widgets {
   border: gray 1px solid;
-  grid-area: widget;
+  grid-area: widgets;
 }
