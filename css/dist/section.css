@@ -1,7 +1,7 @@
 .grid_inicio {
   margin: 2% 3%;
   position: relative;
-  background: rgba(128, 128, 128, 0.37);
+  font-size: 1.2em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -13,6 +13,7 @@
   padding: 10px 15px;
   text-align: justify;
   border: gray 1px solid;
+  font-size: 1em;
 }
 .grid_inicio aside {
   border: gray 1px solid;
@@ -21,4 +22,16 @@
 .grid_inicio .widgets {
   border: gray 1px solid;
   grid-area: widgets;
+}
+
+@media (max-width: 600px) {
+  .grid_inicio {
+    margin: 2% 3%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas: "section" "aside" "widgets ";
+  }
 }

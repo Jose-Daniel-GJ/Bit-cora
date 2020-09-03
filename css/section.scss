@@ -1,9 +1,8 @@
 .grid_inicio{
     margin: 2% 3%;
     position: relative;
-    background: rgba(128, 128, 128, 0.37);
     // Grids
-
+    font-size: 1.2em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -15,6 +14,8 @@
         padding: 10px 15px;
         text-align: justify;
         border: gray 1px solid;
+        font-size: 1em;
+        
     }
     & aside{
         border: gray 1px solid;
@@ -25,3 +26,27 @@
         grid-area: widgets;
     }
 }
+
+        // Aqui van las grids con responsive design
+
+        @media (max-width: 600px ){
+            .grid_inicio{
+                margin: 2% 3%;
+                position: relative;
+                // Grids
+            
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                gap: 20px;
+                grid-template-areas: "section" "aside" "widgets ";
+            }
+        }
+
+
+
+
+
+
+
+

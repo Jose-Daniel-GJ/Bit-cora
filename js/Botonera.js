@@ -17,7 +17,14 @@ inicio.addEventListener('click', function(){
     cl_1.classList.remove('Active');
 // Parte del header
     titulo.innerHTML = 'Bitácora <br> Aprender a aprender';
-    img.style.backgroundImage ='url(img/graduados-min.jpg)'
+    img.style.backgroundImage ='url(img/graduados-min.jpg)';
+
+    // box shadow
+    titulo.classList.add('abajo_d');
+    titulo.classList.remove('abajo_i');
+    titulo.classList.remove('arriba_d');
+    titulo.classList.remove('arriba_i');
+    titulo.classList.remove('todo');
 
 });
 cl_1.addEventListener('click', function(){
@@ -28,8 +35,14 @@ cl_1.addEventListener('click', function(){
     cl_3.classList.remove('Active');
     cl_4.classList.remove('Active');
 // Parte del header
-    titulo.innerHTML = '¿Qué es el poder?'
-    img.style.backgroundImage ='url(img/libros-min.jpg)'
+    titulo.innerHTML = '¿Qué es el poder?';
+    img.style.backgroundImage ='url(img/libros-min.jpg)';
+    // box shadow
+    titulo.classList.remove('abajo_d');
+    titulo.classList.add('abajo_i');
+    titulo.classList.remove('arriba_d');
+    titulo.classList.remove('arriba_i');
+    titulo.classList.remove('todo');
 });
 
 cl_2.addEventListener('click', function(){
@@ -40,8 +53,14 @@ cl_2.addEventListener('click', function(){
         cl_3.classList.remove('Active');
         cl_4.classList.remove('Active');
     // Parte del header
-        titulo.innerHTML = 'Camino hacia la universidad '
-        img.style.backgroundImage ='url(img/personas_estudiando-min.jpg)'
+        titulo.innerHTML = 'Camino hacia la universidad ';
+        img.style.backgroundImage ='url(img/personas_estudiando-min.jpg)';
+        // box shadow
+    titulo.classList.remove('abajo_d');
+    titulo.classList.remove('abajo_i');
+    titulo.classList.add('arriba_i');
+    titulo.classList.remove('arriba_d');
+    titulo.classList.remove('todo');
     });
 
 cl_3.addEventListener('click', function(){
@@ -52,8 +71,14 @@ cl_3.addEventListener('click', function(){
             cl_3.classList.add('Active');
             cl_4.classList.remove('Active');
         // Parte del header
-            titulo.innerHTML = 'Mi facultad'
-            img.style.backgroundImage ='url(img/cern-min.jpg)'
+            titulo.innerHTML = 'Mi facultad';
+            img.style.backgroundImage ='url(img/cern-min.jpg)';
+             // box shadow
+            titulo.classList.remove('abajo_d');
+            titulo.classList.remove('abajo_i');
+            titulo.classList.remove('arriba_i');
+            titulo.classList.add('arriba_d');
+            titulo.classList.remove('todo');
         });
     
         // Aqui se modifica la clase 4
@@ -66,6 +91,12 @@ cl_4.addEventListener('click', function(){
        cl_3.classList.remove('Active');
        cl_4.classList.add('Active');
    // Parte del header
-       titulo.innerHTML = 'Titulo'
+       titulo.innerHTML = 'Titulo';
    // img.style.backgroundImage ='url(img/cern-min.jpg)'
+   // box shadow
+   titulo.classList.remove('abajo_d');
+   titulo.classList.remove('abajo_i');
+   titulo.classList.remove('arriba_i');
+   titulo.classList.remove('arriba_d');
+   titulo.classList.add('todo');
  });
