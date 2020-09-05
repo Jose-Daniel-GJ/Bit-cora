@@ -118,6 +118,7 @@
     border: solid black 1px;
     width: min-content;
     display: grid;
+    width: 20%;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     grid-template-areas: "titulo" "imagenes" "opinion";
