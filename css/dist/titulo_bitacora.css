@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.bit {
+  display: flex;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 2em;
+  font-family: "Montserrat";
+  font-size: 1.5em;
+  position: relative;
+  box-shadow: 0px 1.5px 0px #230A59;
+}
+.bit h2 {
+  margin-left: 2%;
+  display: flex;
+}
+.bit p {
+  display: flex;
+  justify-self: right;
+  position: absolute;
+  right: 0;
+  font-size: 0.6em;
+  color: gray;
+  bottom: 0.1em;
+}

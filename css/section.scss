@@ -2,7 +2,8 @@
     margin: 2% 3%;
     position: relative;
     // Grids
-    font-size: 1.2em;
+    font-size: 1em;
+    font-family: 'Montserrat';
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -42,11 +43,3 @@
                 grid-template-areas: "section" "aside" "widgets ";
             }
         }
-
-
-
-
-
-
-
-

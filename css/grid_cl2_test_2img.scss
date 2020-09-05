@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: 'Montserrat';
+}
+
+    .tests{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        grid-template-rows: auto;
+        // grid-template-areas: 
+        // "test1 test2"
+        // "test1 test2"
+        // "test4" "text3"
+        // "test4" "imagen"
+        ;
+        // @media (min-width:1440px ) {
+        //     grid-template-columns: 450px;
+
+        // }
+        // @media (max-width: 970px ) {
+        //     text-align: center;
+        //     width: 70%;
+        //     grid-template-columns: 300px;
+        //     grid-template-areas: 
+        //    "test1"
+        //    "test2";
+        // }
+        .test{
+            margin: 1em auto;
+            border: solid black 1px;
+            width: min-content;
+        
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "titulo"
+            "imagenes"
+            "opinion";
+        
+            & .bloque-titulo{
+                text-align: center;
+                display: grid;
+                font-size: 2em;
+                width: 100%;
+                color: black;
+                grid-area: titulo;
+                padding: 1em;
+            }
+            & .imagenes{
+                display: inline-block;
+                padding: 0.5em;
+                justify-content: center;
+                & .img_1{
+                    margin: 1em auto 1em auto;
+                    width: 80%;
+                }
+            }
+        
+            & .opinion{
+                padding: 0.5em 1em;
+                    & .sub{
+                        color: black;
+                        font-size: 1.5em;
+                    }
+                    & .parrafo-opinion{
+                        margin-top: 1em;
+                        & a{
+                            color: rgb(0, 26, 255);
+                        }
+                    }
+            }
+        }
+    }
+
+
+.tests{
+    .test_1{
+        width: min-content;
+        & .titulo-bloque-test-1{
+            background: yellowgreen;
+    
+            & .titulo1{
+                color: white;
+                background: yellowgreen;
+            }
+        }
+        & .imagenes-test-1{
+            & .img1{
+                display: inline-block;
+            }
+        }
+        
+        
+    }
+}
+.tests{
+    .test_2{
+        width: min-content;
+        & .titulo-bloque-test-2{
+            background: rgb(50, 205, 146);
+    
+            & .titulo2{
+                color: white;
+                background: rgb(50, 205, 146);
+            }
+        }
+        & .imagenes-test-2{
+            & .img1{
+                display: inline-block;
+            }
+        }
+        
+        
+    }
+}
+.tests{
+    .test_3{
+        width: min-content;
+        & .titulo-bloque-test-3{
+            background: rgb(50, 86, 205);
+    
+            & .titulo2{
+                color: white;
+                background: rgb(50, 86, 205);
+            }
+        }
+        & .imagenes-test-3{
+            & .img1{
+                display: inline-block;
+            }
+        }
+        
+    }
+}
+.tests{
+    .test_4{
+        width: min-content;
+        & .titulo-bloque-test-4{
+            background: #cd3232;
+    
+            & .titulo2{
+                color: white;
+                background: #cd3232;
+            }
+        }
+        & .imagenes-test-4{
+            & .img1{
+                display: inline-block;
+            }
+        }
+        
+    }
+}
+
+
+
+
+@media (max-width: 970px ) {
+    .tests{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        grid-template-rows: auto;
+       
+        .test{
+            margin: 1em auto;
+            border: solid black 1px;
+            width: min-content;
+        
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "titulo"
+            "imagenes"
+            "opinion";
+        
+            & .bloque-titulo{
+                text-align: center;
+                display: grid;
+                font-size: 2em;
+                width: 100%;
+                color: black;
+                grid-area: titulo;
+                padding: 1em;
+            }
+            & .imagenes{
+                display: inline-block;
+                padding: 0.5em;
+                justify-content: center;
+                & .img_1{
+                    margin: 1em auto 1em auto;
+                    width: 80%;
+                }
+            }
+        
+            & .opinion{
+                padding: 0.5em 1em;
+                    & .sub{
+                        color: black;
+                        font-size: 1.5em;
+                    }
+                    & .parrafo-opinion{
+                        margin-top: 1em;
+                        & a{
+                            color: rgb(0, 26, 255);
+                        }
+                    }
+            }
+        }
+    }
+}

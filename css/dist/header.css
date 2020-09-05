@@ -7,6 +7,7 @@
 body {
   min-height: 100vh;
   min-width: 100%;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 }
 
 .header_box {
@@ -43,15 +44,17 @@ body {
   font-weight: 1000;
   display: flex;
   text-align: center;
-  font-size: 5vw;
+  font-size: 4vw;
   transition: 0.2s cubic-bezier(1, 1, 0, 0);
 }
 
 .botonera {
   background: #0029FA;
   display: flex;
+  font-family: "Montserrat";
+  font-weight: 900;
   width: 100%;
-  height: 3.8em;
+  height: 3em;
   align-content: center;
 }
 @media (max-width: 510px) {
@@ -140,7 +143,7 @@ body {
   .botonera .links .Active {
     background: #fff;
     border-radius: 2px;
-    height: 250%;
+    height: 255%;
     padding-top: 5px;
     color: #5C73F2;
     transition: 0.2s;

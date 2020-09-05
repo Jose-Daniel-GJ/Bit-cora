@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+main {
+  width: 90%;
+  font-size: 1em;
+  color: #272727;
+  margin: 4em auto;
+  display: grid;
+  gap: 3em;
+  font-family: "Montserrat";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "txt txt aside" "wid wid wid";
+}
+main article {
+  grid-area: txt;
+  padding: 0.8em;
+  background: #fff;
+}
+main article .cambio {
+  box-shadow: 0px 1.5px 0px #230A59;
+  padding-bottom: 1em;
+}
+main article .entre_titulo {
+  font-size: 1.8em;
+  color: black;
+}
+main article p {
+  text-align: justify;
+  margin-top: 1em;
+  font-size: 1em;
+}
+main article h3 {
+  font-size: 2em;
+  color: black;
+}
+main aside {
+  grid-area: aside;
+  background: #fff;
+  padding-top: 7em;
+}
+main aside img {
+  width: 100%;
+  color: black;
+}
+main aside h4 {
+  font-size: 2em;
+  margin-top: 1em;
+}
+main aside p {
+  text-align: justify;
+}
+main .wid {
+  grid-area: wid;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 5em auto;
+  grid-template-areas: "imagen titulo" "imagen texto";
+  position: relative;
+}
+main .wid p {
+  display: flex;
+  grid-area: texto;
+  align-content: center;
+  text-align: justify;
+}
+main .wid h5 {
+  grid-row: titulo;
+  display: flex;
+  font-size: 2em;
+  color: black;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+}
+main .wid img {
+  grid-area: imagen;
+  width: 80%;
+  margin-right: 0;
+  margin-left: 1.2em;
+  box-shadow: 0px 0px 0px 0.2em rgba(0, 0, 0, 0.747);
+}
+main .wid img ::after {
+  content: "https://3.bp.blogspot.com/-YqqcWFtZbxA/USEOtph2EtI/AAAAAAAAEZ0/65Yn02fxzRs/s280/Animal-escondido.jpg";
+  color: white;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 2em auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas: "txt" "aside" "wid";
+  }
+  main .wid {
+    width: 100%;
+    gap: 1em;
+    grid-template-areas: "titulo titulo" "texto texto" "imagen imagen";
+  }
+  main .wid h5 {
+    width: 100%;
+    grid-area: titulo;
+  }
+  main .wid p {
+    grid-area: texto;
+    width: 100%;
+  }
+}

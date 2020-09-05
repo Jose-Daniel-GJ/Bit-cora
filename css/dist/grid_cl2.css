@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  font-family: "Montserrat";
+}
+
+.intro {
+  color: #181818;
+  margin: 4em auto 1em;
+  width: 90%;
+}
+.intro .contenido_intro {
+  padding: 0.8em;
+}
+.intro .contenido_intro h3 {
+  color: black;
+  font-size: 2em;
+}
+.intro .contenido_intro p {
+  font-size: 1em;
+  margin-top: 1.2em;
+  text-align: justify;
+}
+
+.dibujo {
+  width: 90%;
+}
+@media (min-width: 601px) {
+  .dibujo .dibujo_texto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 1em;
+    position: relative;
+  }
+  .dibujo .dibujo_texto .tex {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .dibujo .dibujo_texto .tex h4 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+  }
+  .dibujo .dibujo_texto .tex p {
+    margin-top: 1em;
+    text-align: justify;
+  }
+  .dibujo .dibujo_texto img {
+    grid-column-start: 0;
+    grid-column-end: 2;
+    position: absolute;
+    right: 5em;
+    bottom: 1em;
+  }
+}
+@media (max-width: 600px) {
+  .dibujo .dibujo_texto {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.resultados {
+  width: 90%;
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.resultados .resultados_txt {
+  padding: 0.5em 1em;
+}
+.resultados .resultados_txt h5 {
+  font-size: 2em;
+  color: black;
+  text-align: center;
+}
+.resultados .resultados_txt p {
+  text-align: justify;
+  margin-top: 1em;
+}
+.resultados .im {
+  display: flex;
+  justify-content: center;
+}
+.resultados .im img {
+  width: 70%;
+  margin: auto;
+}
+
+@media (max-width: 970px) {
+  .resultados {
+    width: 90%;
+    margin: 2em auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .resultados .resultados_txt {
+    padding: 0.5em 1em;
+  }
+  .resultados .resultados_txt h5 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+  }
+  .resultados .resultados_txt p {
+    text-align: justify;
+    margin-top: 1em;
+  }
+  .resultados .im {
+    display: flex;
+    justify-content: center;
+  }
+  .resultados .im img {
+    width: 70%;
+    margin: auto;
+  }
+}

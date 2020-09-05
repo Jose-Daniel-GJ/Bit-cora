@@ -7,85 +7,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/dist/header.css" rel="stylesheet">
     <link rel="stylesheet" href="css/dist/footer.css">
+    <link rel="stylesheet" href="css/dist/index-s.css">
     <link rel="stylesheet" href="css/dist/section.css">
+    <link rel="stylesheet" href="css/dist/titulo_bitacora.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Pinyon+Script&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>Bitácora</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
 
+    <!-- Header -->
     <div class="header_box" id="header_box">
         <header class="header_box__titles">
             <h1 class="abajo_d" id="titulo">Bitácora<br>Aprender a aprender</h1>
         </header>
-        
-                
     </div>
+
+    <!-- Navbar -->
 
     <nav class="botonera">
         <div class="links">
-            <a href="#" class="Active" id="inicio">Inicio</a>
-            <a href="#" id="clase_1">Clase 1</a>
-            <a href="#" id="clase_2">Clase 2</a>
-            <a href="#" id="clase_3">Clase 3</a>
-            <a href="#" id="clase_4">Clase 4</a>
+            <a href="index.html" class="Active" id="inicio">Inicio</a>
+            <a href="html/clase_1.html" id="clase_1">Clase 1</a>
+            <a href="html/clase_2.html" id="clase_2">Clase 2</a>
+            <a href="html/clase_3.html" id="clase_3">Clase 3</a>
+            <a href="html/clase_4.html" id="clase_4">Clase 4</a>
         </div>
     </nav>
 
-    <!-- Esta es la paerte del INICIO -->
-
-    <div class="grid_inicio" id="layout_inicio">
-        <section id="section_inicio">
-            <h1>Hola</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo porro hic voluptas repellat sed, sequi
-                iste laborum, officiis corrupti consectetur excepturi illum? Est tempora recusandae, ex dolore
-                architecto debitis quae?
-            </p>
-        </section>
-        <aside id="aside_inicio">
-            <p> hola
-            </p>
-        </aside>
-
-        <div class="widgets">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iste, quod magni voluptatum modi enim
-                consequatur
-                delectus illo impedit asperiores assumenda praesentium saepe porro dolorum accusamus vel aspernatur ex
-                suscipit!Quam
-                obcaecati accusamus, recusandae perspiciatis architecto enim nesciunt molestias dignissimos deserunt
-                ratione modi?
-                Corrupti, temporibus! Repellendus eveniet ab veniam reprehenderit ipsam quaerat tenetur qui commodi,
-                nisi eaque
-                aperiam voluptatum. Dolore.
-            </p>
-        </div>
+    <div class="bit">
+        <h2>Bitácora</h2>
+        <p>Jose Daniel Garcia Jimenez</p>
     </div>
+
+    <!-- Esta es la paerte del INICIO -->
+    <main class="inicio">
+        <div class="grid_inicio" id="layout_inicio">
+            <section id="section_inicio">
+                <h3>¿Qué significó este proceso en mí vida?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo porro hic voluptas repellat sed, sequi
+                    iste laborum, officiis corrupti consectetur excepturi illum? Est tempora recusandae, ex dolore
+                    architecto debitis quae?
+                </p>
+            </section>
+            <aside id="aside_inicio">
+                <div class="imagen-recortada">
+                    <img src="img/universitario-min.jpg" alt="Universitarios estudiando">
+                </div>
+            </aside>
+    
+            <div class="widgets">
+                <h5>Slider</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iste, quod magni voluptatum modi enim
+                    consequatur
+                    delectus illo impedit asperiores assumenda praesentium saepe porro dolorum accusamus vel aspernatur ex
+                    suscipit!Quam
+                    obcaecati accusamus, recusandae perspiciatis architecto enim nesciunt molestias dignissimos deserunt
+                    ratione modi?
+                    Corrupti, temporibus! Repellendus eveniet ab veniam reprehenderit ipsam quaerat tenetur qui commodi,
+                    nisi eaque
+                    aperiam voluptatum. Dolore.
+                </p>
+            </div>
+        </div>
+    </main>
+
 
     <!-- Fin del INICIO -->
 
 
 
     <footer>
-        <h1>Contacto</h1>
-        <p class="correo"><a href="mailto:josedaniel190604@gmail.com">josedaniel190604@gmail.com</a></p>
-        <p class="fecha">2020</p>
+        <address>
+            <h1>Contacto</h1>
+            <p class="correo"><a href="mailto:josedaniel190604@gmail.com">josedaniel190604@gmail.com</a></p>
+            <p class="fecha">2020</p>
+        </address>
     </footer>
 
-    <script src="js/Botonera.js"></script>
+    <script></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+    
 </body>
 
 </html>

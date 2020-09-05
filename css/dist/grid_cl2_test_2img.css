@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  font-family: "Montserrat";
+}
+
+.tests {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  grid-template-rows: auto;
+}
+.tests .test {
+  margin: 1em auto;
+  border: solid black 1px;
+  width: min-content;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "titulo" "imagenes" "opinion";
+}
+.tests .test .bloque-titulo {
+  text-align: center;
+  display: grid;
+  font-size: 2em;
+  width: 100%;
+  color: black;
+  grid-area: titulo;
+  padding: 1em;
+}
+.tests .test .imagenes {
+  display: inline-block;
+  padding: 0.5em;
+  justify-content: center;
+}
+.tests .test .imagenes .img_1 {
+  margin: 1em auto 1em auto;
+  width: 80%;
+}
+.tests .test .opinion {
+  padding: 0.5em 1em;
+}
+.tests .test .opinion .sub {
+  color: black;
+  font-size: 1.5em;
+}
+.tests .test .opinion .parrafo-opinion {
+  margin-top: 1em;
+}
+.tests .test .opinion .parrafo-opinion a {
+  color: #001aff;
+}
+
+.tests .test_1 {
+  width: min-content;
+}
+.tests .test_1 .titulo-bloque-test-1 {
+  background: yellowgreen;
+}
+.tests .test_1 .titulo-bloque-test-1 .titulo1 {
+  color: white;
+  background: yellowgreen;
+}
+.tests .test_1 .imagenes-test-1 .img1 {
+  display: inline-block;
+}
+
+.tests .test_2 {
+  width: min-content;
+}
+.tests .test_2 .titulo-bloque-test-2 {
+  background: #32cd92;
+}
+.tests .test_2 .titulo-bloque-test-2 .titulo2 {
+  color: white;
+  background: #32cd92;
+}
+.tests .test_2 .imagenes-test-2 .img1 {
+  display: inline-block;
+}
+
+.tests .test_3 {
+  width: min-content;
+}
+.tests .test_3 .titulo-bloque-test-3 {
+  background: #3256cd;
+}
+.tests .test_3 .titulo-bloque-test-3 .titulo2 {
+  color: white;
+  background: #3256cd;
+}
+.tests .test_3 .imagenes-test-3 .img1 {
+  display: inline-block;
+}
+
+.tests .test_4 {
+  width: min-content;
+}
+.tests .test_4 .titulo-bloque-test-4 {
+  background: #cd3232;
+}
+.tests .test_4 .titulo-bloque-test-4 .titulo2 {
+  color: white;
+  background: #cd3232;
+}
+.tests .test_4 .imagenes-test-4 .img1 {
+  display: inline-block;
+}
+
+@media (max-width: 970px) {
+  .tests {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-template-rows: auto;
+  }
+  .tests .test {
+    margin: 1em auto;
+    border: solid black 1px;
+    width: min-content;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "imagenes" "opinion";
+  }
+  .tests .test .bloque-titulo {
+    text-align: center;
+    display: grid;
+    font-size: 2em;
+    width: 100%;
+    color: black;
+    grid-area: titulo;
+    padding: 1em;
+  }
+  .tests .test .imagenes {
+    display: inline-block;
+    padding: 0.5em;
+    justify-content: center;
+  }
+  .tests .test .imagenes .img_1 {
+    margin: 1em auto 1em auto;
+    width: 80%;
+  }
+  .tests .test .opinion {
+    padding: 0.5em 1em;
+  }
+  .tests .test .opinion .sub {
+    color: black;
+    font-size: 1.5em;
+  }
+  .tests .test .opinion .parrafo-opinion {
+    margin-top: 1em;
+  }
+  .tests .test .opinion .parrafo-opinion a {
+    color: #001aff;
+  }
+}

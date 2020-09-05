@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+main{
+    width: 90%;
+    font-size: 1em;
+    color: rgb(39, 39, 39);
+    margin: 4em auto;
+    display: grid;
+    gap: 3em;
+    font-family: 'Montserrat';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "txt txt aside"
+    "wid wid wid";
+
+    & article{
+        grid-area: txt;
+        padding: 0.8em;
+        background: #fff;
+
+        & .cambio{
+            box-shadow: 0px 1.5px 0px #230A59;
+            padding-bottom: 1em;
+        }
+
+        & .entre_titulo{
+            font-size: 1.8em;
+            color: black;
+        }
+        & p{
+            text-align: justify;
+            margin-top: 1em;
+            font-size: 1em;
+        }
+
+        & h3{
+            font-size: 2em;
+            color: black;
+        }
+    }
+
+    & aside{
+        & img{
+            width: 100%;
+            color: black;
+        }
+        & h4{
+            font-size: 2em;
+            margin-top: 1em;
+        }
+        grid-area: aside;
+        background: #fff;
+        padding-top: 7em;
+
+        & p{
+            text-align: justify;
+        }
+    }
+
+    & .wid{
+        grid-area: wid;
+        background: #fff;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 5em auto;
+        grid-template-areas:
+         "imagen titulo"
+         "imagen texto"
+        ;
+        position: relative;
+
+        & p{
+            display: flex;
+            grid-area: texto;
+            align-content: center;
+            text-align: justify;
+        }
+
+        & h5{
+            grid-row: titulo;
+            display: flex;
+            font-size: 2em;
+            color: rgb(0, 0, 0);
+            align-content: center;
+            justify-content: center;
+            align-self: center;
+        }
+
+        & img{
+            grid-area: imagen;
+            width: 80%;
+            margin-right: 0;
+            margin-left: 1.2em;
+            box-shadow: 0px 0px 0px 0.2em rgba(0, 0, 0, 0.747);
+            & ::after{
+                content: "https://3.bp.blogspot.com/-YqqcWFtZbxA/USEOtph2EtI/AAAAAAAAEZ0/65Yn02fxzRs/s280/Animal-escondido.jpg";
+                color: white;
+            }
+
+        }
+    }
+
+}
+@media (max-width: 600px ){
+    main{
+
+        margin: 2em auto;
+        position: relative;
+        // Grids
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        grid-template-areas: "txt" "aside" "wid";
+
+        & .wid{
+            width: 100%;
+            gap: 1em;
+            grid-template-areas: "titulo titulo" "texto texto" "imagen imagen" ;
+            & h5{
+                width: 100%;
+                grid-area: titulo;
+            }
+            & p{
+                grid-area: texto;
+                width: 100%;
+            }
+        }
+    }
+}

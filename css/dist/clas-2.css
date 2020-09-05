@@ -1,0 +1,51 @@
+.algo {
+  color: #181818;
+  margin: 4em auto 1em;
+  width: 80%;
+}
+.algo .tite {
+  padding: 0.8;
+  color: black;
+  font-size: 2em;
+}
+.algo p {
+  font-size: 1em;
+  margin-top: 1.2em;
+  text-align: justify;
+}
+
+.consultas {
+  display: grid;
+  margin-bottom: 5em;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 970px) {
+  .consultas {
+    grid-template-columns: 1fr;
+    margin-top: 1em;
+  }
+}
+.consultas .dormir {
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+}
+.consultas .dormir .titulop {
+  color: black;
+  font-size: 2em;
+}
+.consultas .dormir .espacio {
+  margin-top: 1em;
+}
+.consultas .nutricion {
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+}
+.consultas .nutricion .titulop {
+  color: black;
+  font-size: 2em;
+}
+.consultas .nutricion .espacio {
+  margin-top: 1em;
+}

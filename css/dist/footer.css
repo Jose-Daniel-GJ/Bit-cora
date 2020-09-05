@@ -5,26 +5,31 @@ footer {
   align-self: flex-end;
   position: absolute;
   bottom: 1;
+  font-family: "Montserrat";
+  font-weight: 100;
 }
-footer h1 {
+footer address h1 {
   font-size: 1.563;
   text-align: center;
   margin-bottom: 0;
-  padding-top: 1%;
+  padding-top: 0.3em;
+  font-family: "Montserrat";
 }
-footer .fecha {
-  margin-top: 0;
+footer address .fecha {
+  margin-top: 0.3em;
   text-align: center;
   font-size: 0.75em;
+  padding-bottom: 0.5em;
 }
-footer .correo {
+footer address .correo {
   text-align: center;
   margin-bottom: 0;
+  font-style: normal;
 }
-footer .correo a {
+footer address .correo a {
   text-decoration: none;
   color: #fff;
 }
-footer .correo a:hover {
+footer address .correo a:hover {
   color: #00ccff;
 }

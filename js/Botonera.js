@@ -7,6 +7,7 @@ const cl_1 =document.getElementById('clase_1');
 const cl_2 =document.getElementById('clase_2');
 const cl_3 =document.getElementById('clase_3');
 const cl_4 =document.getElementById('clase_4');
+ 
 
 inicio.addEventListener('click', function(){
 // Parte de los botones
