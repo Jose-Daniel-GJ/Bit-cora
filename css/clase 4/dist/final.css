@@ -1,0 +1,67 @@
+span {
+  width: 100%;
+}
+span strong {
+  width: 90%;
+  margin: auto;
+  font-size: 2em;
+  text-align: center;
+  box-shadow: 0px 5px 0px #230A59;
+}
+
+.linea {
+  width: 100%;
+}
+.linea div {
+  width: 90%;
+  color: transparent;
+  margin: auto;
+  box-shadow: 0px 5px 0px #230A59;
+}
+
+.final {
+  width: 80%;
+  margin: auto;
+}
+.final h6 {
+  font-size: 2em;
+  color: black;
+  text-align: center;
+}
+.final h5 {
+  font-size: 2em;
+  color: black;
+  box-shadow: 0px 5px 0px greenyellow;
+  width: fit-content;
+  margin: 2em 0 1em;
+}
+.final p {
+  text-align: justify;
+}
+
+.container-tabla {
+  margin: auto;
+  width: 70%;
+}
+.container-tabla table {
+  width: 100%;
+  font-weight: bold;
+  color: white;
+  background: #3e4f6f;
+  border-collapse: collapse;
+}
+.container-tabla table .promedio {
+  background: teal;
+}
+.container-tabla table thead {
+  background: #230A59;
+}
+.container-tabla table th, .container-tabla table td {
+  padding: 1em;
+}
+.container-tabla h6 {
+  font-size: 2em;
+  margin: 2em auto;
+  text-align: center;
+  width: 100%;
+}

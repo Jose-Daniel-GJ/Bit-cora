@@ -8,29 +8,34 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 20px;
-    grid-template-areas: "section section aside"
-                         "widgets widgets widgets";
+    grid-template-areas: "section section aside";
     & section{
         grid-area: section;
         padding: 10px 15px;
         text-align: justify;
-        border: gray 1px solid;
-        font-size: 1em;
+        font-size: 1.1em;
+        & h3{
+            font-size: 2em;
+            margin: 2em 1em;
+            box-shadow: 0px 5px 0px greenyellow;
+        }
+        & p{
+            margin: 0.6em 3em;
+        }
         
     }
     & aside{
-        border: gray 1px solid;
+        & img{
+            margin-top: 5em;
+        }
         grid-area: aside;
     }
-    & .widgets{
-        border: gray 1px solid;
-        grid-area: widgets;
-    }
+    
 }
 
         // Aqui van las grids con responsive design
 
-        @media (max-width: 600px ){
+        @media (max-width: 700px ){
             .grid_inicio{
                 margin: 2% 3%;
                 position: relative;
@@ -40,6 +45,6 @@
                 grid-template-columns: 1fr;
                 grid-template-rows: auto;
                 gap: 20px;
-                grid-template-areas: "section" "aside" "widgets ";
+                grid-template-areas: "section" "aside" ;
             }
         }

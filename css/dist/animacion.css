@@ -1,0 +1,17 @@
+.animado {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.arriba {
+  animation: mostrararriba 0.5s;
+}
+
+@keyframes mostrararriba {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

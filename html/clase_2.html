@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="../css/dist/grid_cl2_test_2img.css">
     <link rel="stylesheet" href="../css/dist/titulo_bitacora.css">
     <link rel="stylesheet" href="../css/dist/clas-2.css">
+    <link rel="stylesheet" href="../css/dist/animacion.css">
+    <link rel="stylesheet" href="../css/dist/subir.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon"  href="../img/favicon.ico">
+    <title>Camino hacia la universidad</title>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Pinyon+Script&family=Rubik+Mono+One&display=swap"
         rel="stylesheet">
@@ -59,7 +64,10 @@
         </section>
     </main>
 
-    <main class="dibujo">
+    <main class="dibujo ">
+        <div class="ima animado">
+            <img src="../img/text/Paso.png" alt="Dibujo de alguien cansado">
+        </div>
         <section class="dibujo_texto">
             <div class="tex">
                 <h4>El paso del colegio a la universidad</h4>
@@ -69,24 +77,24 @@
                     cansancio, quise representar felicidad, ya que entrar a una universidad es un sueño cumplido, es muy
                     probable que sea difícil al principio, pero solo tenemos que adaptaros.</p>
             </div>
-            <img src="../img/text/Paso.png" alt="Dibujo de alguien cansado">
+        
         </section>
     </main>
 
     <main class="resultados">
         <section class="resultados_txt">
-            <h5>Resultados en mis test de orientación vocacional </h5>
-            <p>Los resultados de los test fueron muy similares, todos apuntan, principalmente, a las ciencias exactas y
+            <h5 >Resultados en mis test de orientación vocacional </h5>
+            <p >Los resultados de los test fueron muy similares, todos apuntan, principalmente, a las ciencias exactas y
                 la tecnología. Esto en mi caso es algo acertado, pues me apasionan ambas áreas y en verdad me gustaría
                 estudiar algo relacionado a estas.</p>
         </section>
-        <div class="im">
+        <div class="im animado">
             <img src="../img/libreta.jpg" alt="Libreta con tareas completadas">
         </div>
     </main>
 
     <main class="tests">
-        <div class="test test_1">
+        <div class="test test_1 animado">
             <div class="bloque-titulo titulo-bloque-test-1">
                 <strong class="titulo1">Test de tareas universitarias</strong>
             </div>
@@ -104,16 +112,16 @@
             </section>
         </div>
 
-        <div class="test test_2">
+        <div class="test test_2 animado">
             <div class="bloque-titulo titulo-bloque-test-2">
                 <strong class="titulo2">Test de la universidad de Palermo </strong>
             </div>
-            <div class="imagenes imageness-test-2">
+            <div class="imagenes imagenes-test-2">
                 <img src="../img/text/text_2_1.png" class="img_1" alt="Resultados del test de palermo">
                 <img src="../img/text/text_2_2.png" class="img_2" alt="Resultados del test de palermo">
             </div>
             <section class="opinion">
-                <strong class="titulo_2">Observación</strong>
+                <strong class="titulo_2 sub">Observación</strong>
                 <p class="parrafo-opinion">Este test es casi el más acertado en cuanto el área del conocimiento, me
                     gusta la
                     física pura, aunque las carreras en las que enfatiza, aunque suenan interesante, no son mi objetivo
@@ -122,16 +130,16 @@
             </section>
         </div>
 
-        <div class="test test_3">
+        <div class="test test_3 animado">
             <div class="bloque-titulo titulo-bloque-test-3">
                 <strong class="titulo2">Test de orientación vocacional - Test de Personalidad</strong>
             </div>
-            <div class="imagenes imageness-test-3">
+            <div class="imagenes imagenes-test-3">
                 <img src="../img/text/text_3.png" alt="Resultados Test de Personalidad">
                 <img src="../img/text/text_3_2.png" alt="Resultados Test de Personalidad">
             </div>
             <section class="opinion">
-                <strong class="titulo_3">Observación</strong>
+                <strong class="titulo_3 sub">Observación</strong>
                 <p class="parrafo-opinion">Los resultados de este test, interpretando los resultados de seguridad y
                     defensa aplicados a la informática, hubiesen sido perfectos a mis gustos, pero las ciencias agrarias
                     no me llaman la atención. <a
@@ -140,15 +148,15 @@
             </section>
         </div>
 
-        <div class="test test_4">
+        <div class="test test_4 animado">
             <div class="bloque-titulo titulo-bloque-test-4">
                 <strong class="titulo2">Test de orientación vocacional - Universia</strong>
             </div>
-            <div class="imagenes imageness-test-4">
+            <div class="imagenes imagenes-test-4">
                 <img src="../img/text/text_4.jpeg" alt="Resultados Test Universia">
             </div>
             <section class="opinion">
-                <strong class="titulo_4">Observación</strong>
+                <strong class="titulo_4 sub">Observación</strong>
                 <p class="parrafo-opinion">A excepción de ingeniería naval, todas las demás carrearas propuestas en los
                     resultados, son de mi interés, principalmente física <a
                         href="https://orientacion.universia.net.co/test_orientacion_profesional/">Click
@@ -225,7 +233,9 @@
         <p></p>
     </div> -->
 
-
+    <div class="subir">
+        <p><a href="#header_box">></a></p>
+    </div>
 
 
 
@@ -238,6 +248,7 @@
         </address>
     </footer>
 
+    <script src="../js/animacion.js"></script>
     <script>
         let back = document.getElementById('header_box');
         back.style.backgroundImage = 'url(../img/personas_estudiando-min.jpg)';

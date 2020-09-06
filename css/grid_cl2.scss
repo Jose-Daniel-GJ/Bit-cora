@@ -24,18 +24,18 @@
 
 .dibujo{
     width: 90%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
         & .dibujo_texto{
-        @media (min-width:601px) {
             
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: auto;
+           
             padding: 1em;
             position: relative;
 
             & .tex{
-                grid-column-start: 2;
-                grid-column-end: 4;
+                
                 & h4{
                     font-size: 2em;
                     color: black;
@@ -46,23 +46,17 @@
                     text-align: justify;
                 }
             }
-            & img {
-                grid-column-start: 0;
-                grid-column-end: 2;
-                position: absolute;
-                right: 5em;
-                bottom: 1em;
-            }
-        }
-
-        @media (max-width:600px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        }
-
-       
-
+        // @media (max-width:600px) {
+        // grid-template-columns: 1fr;
+        // grid-template-rows: auto;
+        // }
     }
+    & .ima{
+        display: flex;
+        justify-content: center;
+        animation: color 2s;
+        animation-iteration-count: infinite;
+    } 
 }
 
 .resultados{
@@ -110,7 +104,7 @@
                 margin-top: 1em;
             }
         }
-        & .im{
+        & .ima{
             display: flex;
             justify-content: center;
             & img{
@@ -118,5 +112,41 @@
                 margin: auto;
             };
         }
-    }    
+    }  
+     
+}
+
+@media (max-width:970px){
+    .dibujo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  auto;
+        width: 90%;
+        margin: 1em auto;
+            & .dibujo_texto{
+                
+               
+                padding: 1em;  
+                & .tex{
+                    & h4{
+                        font-size: 2em;
+                        color: black;
+                        text-align: center;
+                    }
+                    & p{
+                        margin-top: 1em;
+                        text-align: justify;
+                    }
+                }
+        }
+    
+    & .ima{
+        display: flex;
+        & img {
+            // position: absolute;
+            width:30%;
+            margin: auto;
+        }    
+    } 
+    }
 }

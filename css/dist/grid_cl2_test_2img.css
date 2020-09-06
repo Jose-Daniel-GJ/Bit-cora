@@ -11,12 +11,12 @@
 }
 .tests .test {
   margin: 1em auto;
-  border: solid black 1px;
+  border: solid 1px;
   width: min-content;
+  border-radius: 15px;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
-  grid-template-areas: "titulo" "imagenes" "opinion";
 }
 .tests .test .bloque-titulo {
   text-align: center;
@@ -24,8 +24,8 @@
   font-size: 2em;
   width: 100%;
   color: black;
-  grid-area: titulo;
   padding: 1em;
+  border-radius: 10px;
 }
 .tests .test .imagenes {
   display: inline-block;
@@ -52,6 +52,8 @@
 
 .tests .test_1 {
   width: min-content;
+  border: solid 3px yellowgreen;
+  box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.452);
 }
 .tests .test_1 .titulo-bloque-test-1 {
   background: yellowgreen;
@@ -60,11 +62,13 @@
   color: white;
   background: yellowgreen;
 }
-.tests .test_1 .imagenes-test-1 .img1 {
+.tests .test_1 .imagenes-test-1 img {
   display: inline-block;
 }
 
 .tests .test_2 {
+  border: solid 3px #32cd92;
+  box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.452);
   width: min-content;
 }
 .tests .test_2 .titulo-bloque-test-2 {
@@ -74,12 +78,14 @@
   color: white;
   background: #32cd92;
 }
-.tests .test_2 .imagenes-test-2 .img1 {
+.tests .test_2 .imagenes-test-2 img {
   display: inline-block;
 }
 
 .tests .test_3 {
+  border: solid 3px #3256cd;
   width: min-content;
+  box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.452);
 }
 .tests .test_3 .titulo-bloque-test-3 {
   background: #3256cd;
@@ -88,11 +94,9 @@
   color: white;
   background: #3256cd;
 }
-.tests .test_3 .imagenes-test-3 .img1 {
-  display: inline-block;
-}
-
 .tests .test_4 {
+  border: solid 3px #cd3232;
+  box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.452);
   width: min-content;
 }
 .tests .test_4 .titulo-bloque-test-4 {
@@ -102,7 +106,7 @@
   color: white;
   background: #cd3232;
 }
-.tests .test_4 .imagenes-test-4 .img1 {
+.tests .test_4 .imagenes-test-4 img {
   display: inline-block;
 }
 
@@ -115,13 +119,11 @@
   }
   .tests .test {
     margin: 1em auto;
-    border: solid black 1px;
     width: min-content;
     display: grid;
-    width: 20%;
+    width: min-content;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
-    grid-template-areas: "titulo" "imagenes" "opinion";
   }
   .tests .test .bloque-titulo {
     text-align: center;
@@ -129,7 +131,6 @@
     font-size: 2em;
     width: 100%;
     color: black;
-    grid-area: titulo;
     padding: 1em;
   }
   .tests .test .imagenes {
@@ -137,9 +138,100 @@
     padding: 0.5em;
     justify-content: center;
   }
+  .tests .test .imagenes img {
+    margin: 1em auto;
+  }
+  .tests .test .opinion {
+    padding: 0.5em 1em;
+  }
+  .tests .test .opinion .sub {
+    color: black;
+    font-size: 1.5em;
+  }
+  .tests .test .opinion .parrafo-opinion {
+    margin-top: 1em;
+  }
+  .tests .test .opinion .parrafo-opinion a {
+    color: #001aff;
+  }
+}
+@media (max-width: 650px) {
+  .tests {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-template-rows: auto;
+  }
+  .tests .test {
+    margin: 1em auto;
+    width: 100%;
+    display: grid;
+    width: min-content;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+  .tests .test .bloque-titulo {
+    text-align: center;
+    display: grid;
+    font-size: 2em;
+    width: 100%;
+    color: black;
+    padding: 1em;
+  }
+  .tests .test .imagenes {
+    display: inline-block;
+    padding: 0.5em;
+    justify-content: center;
+    width: 100%;
+  }
+  .tests .test .imagenes img {
+    margin: 1em auto;
+    width: 100%;
+  }
+  .tests .test .opinion {
+    padding: 0.5em 1em;
+  }
+  .tests .test .opinion .sub {
+    color: black;
+    font-size: 1.5em;
+  }
+  .tests .test .opinion .parrafo-opinion {
+    margin-top: 1em;
+  }
+  .tests .test .opinion .parrafo-opinion a {
+    color: #001aff;
+  }
+}
+@media (max-width: 601px) {
+  .tests {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-template-rows: auto;
+  }
+  .tests .test {
+    margin: 1em auto;
+    width: min-content;
+    display: grid;
+    width: min-content;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+  .tests .test .bloque-titulo {
+    text-align: center;
+    display: grid;
+    font-size: 2em;
+    width: 100%;
+    color: black;
+    padding: 1em;
+  }
+  .tests .test .imagenes {
+    display: inline-block;
+    justify-content: center;
+  }
   .tests .test .imagenes .img_1 {
-    margin: 1em auto 1em auto;
-    width: 80%;
+    margin: auto;
+    width: 50%;
   }
   .tests .test .opinion {
     padding: 0.5em 1em;

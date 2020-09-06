@@ -7,25 +7,30 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 20px;
-  grid-template-areas: "section section aside" "widgets widgets widgets";
+  grid-template-areas: "section section aside";
 }
 .grid_inicio section {
   grid-area: section;
   padding: 10px 15px;
   text-align: justify;
-  border: gray 1px solid;
-  font-size: 1em;
+  font-size: 1.1em;
+}
+.grid_inicio section h3 {
+  font-size: 2em;
+  margin: 2em 1em;
+  box-shadow: 0px 5px 0px greenyellow;
+}
+.grid_inicio section p {
+  margin: 0.6em 3em;
 }
 .grid_inicio aside {
-  border: gray 1px solid;
   grid-area: aside;
 }
-.grid_inicio .widgets {
-  border: gray 1px solid;
-  grid-area: widgets;
+.grid_inicio aside img {
+  margin-top: 5em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .grid_inicio {
     margin: 2% 3%;
     position: relative;
@@ -33,6 +38,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 20px;
-    grid-template-areas: "section" "aside" "widgets ";
+    grid-template-areas: "section" "aside";
   }
 }
